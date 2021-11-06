@@ -1,0 +1,41 @@
+GET http://localhost:5000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI5OTYxNjIsImV4cCI6MTU5Mjk5NjE3NywiYXVkIjoiNWVlYTBlOTlkMTU3ZjYzZjNlMzYxYjQxIiwiaXNzIjoicGlja3VycGFnZS5jb20ifQ.fsED23a_2dINM1saPjmHkc_gVrsuptb1oSNh0GR-03M
+
+###Login Route
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+  "email": "jhondoe@gmail.com",
+  "password": "1234"
+}
+
+
+###Register Route
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+  "userName": "koushik",
+  "email": "yourstruly123@gmail.com",
+  "password": "1234"
+}
+
+###Refresh token Route
+POST http://localhost:5000/auth/refresh-token
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTI5OTYxMzcsImV4cCI6MTYyNDU1MzczNywiYXVkIjoiNWVlYTBlOTlkMTU3ZjYzZjNlMzYxYjQxIiwiaXNzIjoicGlja3VycGFnZS5jb20ifQ.9kFX7LEzyh6eopqF_TGZQRwYqrIPUUdN441ekfKxu7Q"
+}
+
+###Logout Route
+DELETE http://localhost:5000/auth/logout
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MzE0MzI4MDgsImV4cCI6MTY2Mjk5MDQwOCwiYXVkIjoiNjEzZGIwNjhhYzE5YTkzMjE0YmQxNGQ4IiwiaXNzIjoicGlja3VycGFnZS5jb20ifQ.z7z5B02zLb5zJWn6J8KfvDvv-AHoPsY2x-mrQ4RvgsU"
+}
+
+###Logout Route 2
+DELETE http://localhost:5000/auth/logout/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MzE0MzcwODUsImV4cCI6MTY2Mjk5NDY4NSwiYXVkIjoiNjEzZGMxMWRkMzU2ZDAyYmNjMDJiZjI4IiwiaXNzIjoicGlja3VycGFnZS5jb20ifQ.eunW-Vbzg9LvXS_D63bsu4dtZjd59NW3KofN5jmpgVQ
