@@ -76,6 +76,7 @@ Step 10 (Optional): Change the expiration time of Access Token and Refresh Token
 ## Author
 
 - [**Koushik Roy**](https://kroy-portfolio-frontend.herokuapp.com/)
+- [**Truly Mittal**](https://trulymittal.com)
 
 ## Contribute
 
