@@ -30,6 +30,8 @@ Step 3: Put your credentials in the .env file.
 ```bash
 PORT=3000
 MONGODB_URI=mongodb://localhost:27017
+REDIS_PORT=6379
+REDIS_HOST=127.0.0.1
 DB_NAME=YOUR_DB_NAME
 ACCESS_TOKEN_SECRET=GENERATE_FROM_GENERATE_KEYS_FILE_IN_HELPER
 REFRESH_TOKEN_SECRET=GENERATE_FROM_GENERATE_KEYS_FILE_IN_HELPER
@@ -73,6 +75,7 @@ Step 10 (Optional): Change the expiration time of Access Token and Refresh Token
 
 ## Author
 
+- [**Koushik Roy**](https://kroy-portfolio-frontend.herokuapp.com/)
 - [**Truly Mittal**](https://trulymittal.com)
 
 ## Contribute
